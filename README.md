@@ -1,61 +1,63 @@
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dronecode/UX-Design/35d8148a8a0559cd4bcf50bfa2c94614983cce91/QGC/Branding/Deliverables/QGC_RGB_Logo_Horizontal_Positive_PREFERRED/QGC_RGB_Logo_Horizontal_Positive_PREFERRED.svg" alt="QGroundControl Logo" width="500">
+  <img src="https://raw.githubusercontent.com/Dronecode/UX-Design/35d8148a8a0559cd4bcf50bfa2c94614983cce91/QGC/Branding/Deliverables/QGC_RGB_Logo_Horizontal_Positive_PREFERRED/QGC_RGB_Logo_Horizontal_Positive_PREFERRED.svg" alt="QGroundControl Logo" width="400">
+  <br><br>
+  <img src="https://img.shields.io/badge/fork-live%20data%20edition-blue?style=flat-square" alt="Fork Badge">
+  <img src="https://img.shields.io/badge/license-Apache%202.0-green?style=flat-square" alt="License">
 </p>
 
-<p align="center">
-  <a href="https://github.com/mavlink/QGroundControl/releases">
-    <img src="https://img.shields.io/github/release/mavlink/QGroundControl.svg" alt="Latest Release">
-  </a>
-</p>
-
-*QGroundControl* (QGC) is a highly intuitive and powerful Ground Control Station (GCS) designed for UAVs. Whether you're a first-time pilot or an experienced professional, QGC provides a seamless user experience for flight control and mission planning, making it the go-to solution for any *MAVLink-enabled drone*.
+This is a lightweight, forward-port fork of QGroundControl that adds three things pilots keep asking for: live manned traffic, fresh icons, and maps that never need the internet.
 
 ---
 
-### 🌟 *Why Choose QGroundControl?*
+### ✈️ What’s Extra?
 
-- *🚀 Ease of Use*: A beginner-friendly interface designed for smooth operation without sacrificing advanced features for pros.
-- *✈️ Comprehensive Flight Control*: Full flight control and mission management for *PX4* and *ArduPilot* powered UAVs.
-- *🛠️ Mission Planning*: Easily plan complex missions with a simple drag-and-drop interface.
+- **FlightRadar24 live feed** – see crewed aircraft around your drone in real time (free FR24 key required).  
+- **New icon set** – crisper symbols for both day and night flight decks.  
+- **Locally hosted tiles** – cache or self-host maps; fly offline with no feature loss.
 
-🔍 For a deeper dive into using QGC, check out the [User Manual](https://docs.qgroundcontrol.com/en/) – although thanks to QGC's intuitive UI, you may not even need it!
-
----
-
-### 🚁 *Key Features*
-
-- 🕹️ *Full Flight Control*: Supports all *MAVLink drones*.
-- ⚙️ *Vehicle Setup*: Tailored configuration for *PX4* and *ArduPilot* platforms.
-- 🔧 *Fully Open Source*: Customize and extend the software to suit your needs.
-
-🎯 Check out the latest updates in our [New Features and Release Notes](https://github.com/mavlink/qgroundcontrol/blob/master/CHANGELOG.md).
+Everything else is pure, stable QGC.
 
 ---
 
-### 💻 *Get Involved!*
+### 🚀 Quick-Start
 
-QGroundControl is *open-source*, meaning you have the power to shape it! Whether you're fixing bugs, adding features, or customizing for your specific needs, QGC welcomes contributions from the community.
-
-🛠️ Start building today with our [Developer Guide](https://dev.qgroundcontrol.com/en/) and [build instructions](https://dev.qgroundcontrol.com/en/getting_started/).
-
----
-
-### 🔗 *Useful Links*
-
-- 🌐 [Official Website](http://qgroundcontrol.com)
-- 📘 [User Manual](https://docs.qgroundcontrol.com/en/)
-- 🛠️ [Developer Guide](https://dev.qgroundcontrol.com/en/)
-- 💬 [Discussion & Support](https://docs.qgroundcontrol.com/en/Support/Support.html)
-- 🤝 [Contributing](https://dev.qgroundcontrol.com/en/contribute/)
-- 📜 [License Information](https://github.com/mavlink/qgroundcontrol/blob/master/.github/COPYING.md)
+1. Clone  
+   ```bash
+   git clone --recurse-submodules https://github.com/uxmanz/qgroundcontrolx.git
+   ```
+2. Build (same deps as upstream)  
+ 
+3. Run, open Settings ▸ ADSB, enable the option.
 
 ---
 
-With QGroundControl, you're in full command of your UAV, ready to take your missions to the next level.
+### 🔄 Staying Current
+
+We re-base on upstream stable every two weeks.  
+Watch the repo or open an issue if you need a fresher sync.
 
 ---
 
-### Stargazers over time
+### 🛠️ Build Matrix
 
-[![Stargazers over time](https://starchart.cc/mavlink/qgroundcontrol.svg?variant=adaptive)](https://starchart.cc/mavlink/qgroundcontrol)
+| OS | Qt | Status |
+|----|----|--------|
+| Ubuntu 22.04 | 6.6 | ✅ |
+| macOS 14 | 6.6 | ✅ |
+| Windows 11 | 6.6 | ✅ |
+| Android 13 | 6.6 | ✅ |
+| iOS 17 | 6.6 | ⏳ (icons only) |
+
+---
+
+### 📄 License
+
+Same Apache 2.0 as upstream; no new restrictions.  
+FlightRadar24 data is subject to their terms; local tiles remain your responsibility.
+
+---
+
+### ⭐ Support
+
+If this keeps your skies safer, give us a star.  
+Happy flying—and watching!
